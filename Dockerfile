@@ -1,3 +1,4 @@
 FROM python:3.11
-CMD echo “hello world”
+COPY ./requirements.txt .
+CMD python entrypoint.py
 COPY ./entrypoint.py .
